@@ -4,12 +4,16 @@
 AsyncIterable to Array conversion for JavaScript.
 See [docs](https://async-iterable-iterator.github.io/async-iterable-to-array/index.html).
 
-> :building_construction: Caveat emptor! This is work in progress. Code may be
-> working. Documentation may be present. Coherence may be. Maybe.
-
 > :warning: Depending on your environment, the code may require
 > `regeneratorRuntime` to be defined, for instance by importing
 > [regenerator-runtime/runtime](https://www.npmjs.com/package/regenerator-runtime).
+
+```js
+import {asyncIterableToArray} from '@async-iterable-iterator/async-iterable-to-array';
+
+let asyncIterable = ...;
+let array = await asyncIterableToArray(asyncIterable);
+```
 
 [![License](https://img.shields.io/github/license/async-iterable-iterator/async-iterable-to-array.svg)](https://raw.githubusercontent.com/async-iterable-iterator/async-iterable-to-array/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@async-iterable-iterator/async-iterable-to-array.svg)](https://www.npmjs.org/package/@async-iterable-iterator/async-iterable-to-array)
