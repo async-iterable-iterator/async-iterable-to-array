@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import {asyncIterableToArray} from '../../src/index.js';
+import {asyncIterableToArray} from '#module';
 
 const asyncify = async function* (array) {
 	// eslint-disable-next-line no-await-in-loop
